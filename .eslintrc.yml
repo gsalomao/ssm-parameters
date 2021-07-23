@@ -1,0 +1,10 @@
+root: true
+overrides:
+  - files: '*.ts'
+    parserOptions:
+      project: 'tsconfig.*?.json'
+    extends:
+      - 'eslint:recommended'
+      - 'plugin:@typescript-eslint/eslint-recommended'
+      - 'plugin:@typescript-eslint/recommended'
+      - 'plugin:prettier/recommended'

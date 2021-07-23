@@ -5,7 +5,18 @@
   "author": "Gustavo Salomão",
   "license": "MIT",
   "main": "dist/ssm-parameters.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\"",
+    "test": "jest --maxWorkers=1",
+    "test:dev": "jest --maxWorkers=1 --watch",
+    "test:cov": "jest --runInBand --coverage"
+  },
   "keywords": [
     "aws",
     "lambda",
@@ -13,5 +24,47 @@
     "ssm",
     "aws-ssm",
     "ssm-parameter-store"
-  ]
+  ],
+  "peerDependencies": {
+    "aws-sdk": "^2.947.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "aws-sdk": "^2.947.0",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "standard-version": "^9.3.1",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coveragePathIgnorePatterns": [
+      "node_modules",
+      "coverage"
+    ],
+    "testEnvironment": "node"
+  }
 }

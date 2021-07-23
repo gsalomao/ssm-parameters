@@ -1,0 +1,17 @@
+{
+  "name": "ssm-parameters",
+  "version": "0.1.0",
+  "description": "Lightweight AWS Parameter Store wrapper",
+  "author": "Gustavo Salomão",
+  "license": "MIT",
+  "main": "dist/ssm-parameters.js",
+  "scripts": {},
+  "keywords": [
+    "aws",
+    "lambda",
+    "aws-lambda",
+    "ssm",
+    "aws-ssm",
+    "ssm-parameter-store"
+  ]
+}

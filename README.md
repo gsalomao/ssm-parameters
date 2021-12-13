@@ -2,7 +2,6 @@
 
 ![Build Status](https://github.com/gsalomao/ssm-parameters/actions/workflows/workflow.yml/badge.svg?branch=develop)
 [![Coverage](https://codecov.io/gh/gsalomao/ssm-parameters/branch/develop/graph/badge.svg?token=ZKA79Q7F5L)](https://codecov.io/gh/gsalomao/ssm-parameters)
-[![Maintainability](https://api.codeclimate.com/v1/badges/3bb0167dfda0cc8ad3d3/maintainability)](https://codeclimate.com/github/gsalomao/ssm-parameters/maintainability)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Lightweight AWS Parameter Store wrapper written in Typescript, designed for

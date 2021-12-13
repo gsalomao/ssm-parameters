@@ -8,9 +8,9 @@
   "scripts": {
     "build": "tsc",
     "release": "standard-version",
+    "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
-    "release:major": "standard-version --release-as major",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "test": "jest --maxWorkers=1",
@@ -25,6 +25,10 @@
     "aws-ssm",
     "ssm-parameter-store"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsalomao/ssm-parameters.git"
+  },
   "peerDependencies": {
     "aws-sdk": "^2.947.0"
   },
